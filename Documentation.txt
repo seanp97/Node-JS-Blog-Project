@@ -1,0 +1,16 @@
+const path = require("path");
+const express = require("express");
+const app = express();
+const exphbs = require("express-handlebars");
+const bodyParser = require("body-parser");
+const mysql = require("mysql");
+
+npm install all of above
+
+MySQL database:
+
+Create database nodeblog --
+2 tables:
+	nodebloglogin - INT (loginid, AI PRIMARY KEY) -- VARCHAR (username, length > 150) -- VARCHAR (password, length > 150)
+	nodeblogsql - INT (id, AI, PRIMARY KEY) -- VARCHAR (title, lenth > 300) -- VARCHAR (author, length > 150) -- VARCHAR (body, length > 5000)
+

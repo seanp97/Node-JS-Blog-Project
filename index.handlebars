@@ -1,0 +1,12 @@
+<h2 class="blogPostsHeading">Blog posts</h2>
+
+{{#each data}}
+    <a href="viewblog/{{this.id}}">
+        <div class="row blogSection">
+            <div class="col-md-12">
+                <h3>{{this.author}}</h3><br>
+                <h4>{{this.title}}</h4>
+            </div>
+        </div>
+    </a>
+{{/each}}
